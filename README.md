@@ -1,2 +1,1 @@
-# Credit-Card-Fraud-Detection
-Fraud detection ai models testing
+Dataset used: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data
