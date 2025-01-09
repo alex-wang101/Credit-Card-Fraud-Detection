@@ -21,5 +21,6 @@ Build and evaluate machine learning models to detect fraudulent transactions.
 Minimize false positives while ensuring high detection accuracy.
 Provide insights into transaction patterns using exploratory data analysis (EDA).
 ## Dataset analysis 
+The dataset used for this project is the [Credit Card Fraud Detection Dataset.](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 **Total record**: 284806 x 32 - 284806 transactions each with 32 attributes (last attribute determines if the specific transaction is **fraud** or not **fraud**)
 
