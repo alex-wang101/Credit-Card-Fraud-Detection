@@ -33,15 +33,16 @@ Transaction amount
 Class (either 0 or 1) - determines whether the transaction is fraud or not fraud. 
 ##Project Structure##
 Credit-Card-Fraud-Detection/
-├── data/                     # Dataset files (not included in repo for size)
-├── notebooks/                # Jupyter Notebooks for EDA and modeling
-├── src/                      # Source code files
-│   ├── preprocessing.py      # Data preprocessing steps
-│   ├── train_model.py        # Training models
-│   ├── evaluate_model.py     # Model evaluation
-├── results/                  # Model performance metrics and visualizations
-├── requirements.txt          # Required Python packages
-├── README.md                 # Project documentation
+
+├── data/                    
+├── notebooks/                
+├── src/                      
+│   ├── preprocessing.py      
+│   ├── train_model.py       
+│   ├── evaluate_model.py     
+├── results/                  
+├── requirements.txt          
+├── README.md                 
 
 
 
