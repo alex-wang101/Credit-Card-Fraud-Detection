@@ -1,4 +1,6 @@
-# Credit Card Fraud Detection #
+<img width="662" alt="image" src="https://github.com/user-attachments/assets/7e1f98ef-7dc2-440b-8dca-c5273ca935b6" />
+
+                                    ## Credit Card Fraud Detection ##
 
 This project trains and tests pre-built ai-models for credit card fraud detection. We created an algorithm to test the accuracy of each model and return the most effective model for potential commercial use. 
 
