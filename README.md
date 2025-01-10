@@ -22,5 +22,14 @@ Minimize false positives while ensuring high detection accuracy.
 Provide insights into transaction patterns using exploratory data analysis (EDA).
 ## Dataset analysis 
 The dataset used for this project is the [Credit Card Fraud Detection Dataset.](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-**Total record**: 284806 x 32 - 284806 transactions each with 32 attributes (last attribute determines if the specific transaction is **fraud** or not **fraud**)
+**Total record**: 
+284806 transactions each with 32 attributes 
+284315 Fraud transactions 
+**Attributes**: 
+28 PCA-transformed data 
+Time (seconds elapsed between the specific transaction vs the first)
+Transaction amount
+Class (either 0 or 1) - determines whether the transaction is fraud or not fraud. 
+**Data breakdown**
+284315 
 
