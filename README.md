@@ -48,7 +48,7 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 - Random Forest
 - Gradient Boosting (e.g., XGBoost, LightGBM)
 
-+How did we evaluate the data?
++ How did we evaluate the data?
 - Precision: has a section for fraud and not fraud - determines the accuracy of 
 - Recall
 - F1-Score
