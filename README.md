@@ -65,6 +65,7 @@ Example of our model reports:
 <br>
 <img width="199" alt="image" src="https://github.com/user-attachments/assets/415971c4-e96d-439a-a6f7-f5843e7017ef" />
 <br>
-    - Examplar report data from one of our testings; each fraction represents the percent of success in that catagory. 
+    - Examplar report data from one of our testings; each fraction represents the percent of success in that catagory.
+<br>
 4. Hyperparameter Tuning:
     - Used GridSearchCV to optimize model performance.
