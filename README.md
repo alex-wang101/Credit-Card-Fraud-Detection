@@ -50,7 +50,7 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
     - Sequential
 
 + How did we evaluate the data?
-    - Precision: has a section for fraud and not fraud - determines the accuracy of
+    - Precision: has a section for fraud and not fraud 
     - Recall
     - F1-Score
     - Overall accuracy
