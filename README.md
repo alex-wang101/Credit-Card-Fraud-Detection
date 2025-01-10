@@ -35,23 +35,23 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 
 ## The Method ## 
 + How did we set up our data for training?
-- Exploratory Data Analysis: 
-    Analyzed transaction amounts, time distributions, and correlations between features.
-    Visualized fraud vs. legitimate transaction patterns.
+    Exploratory Data Analysis: 
+        Analyzed transaction amounts, time distributions, and correlations between features.
+        Visualized fraud vs. legitimate transaction patterns.
   
 + What are some ways we manipulated the preprocessing data?
-- Scaled features using StandardScaler.
-- Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique).
+  Scaled features using StandardScaler.
+  Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique).
 
 + What ai models did we train and use?
-- Logistic Regression
-- Random Forest
-- Gradient Boosting (e.g., XGBoost, LightGBM)
+  Logistic Regression
+  Random Forest
+  Gradient Boosting (e.g., XGBoost, LightGBM)
 
 + How did we evaluate the data?
-- Precision: has a section for fraud and not fraud - determines the accuracy of 
-- Recall
-- F1-Score
-- Overall accuracy
+  Precision: has a section for fraud and not fraud - determines the accuracy of
+  Recall
+  F1-Score
+  Overall accuracy
 4. Hyperparameter Tuning:
 Used GridSearchCV to optimize model performance.
