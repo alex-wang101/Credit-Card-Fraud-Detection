@@ -2,7 +2,7 @@
 
 
 **We tested 4 pre-built AI models to see which one is more effective for the given data.**
-https://img.shields.io/github/contributors/alex-wang101/Credit-Card-Fraud-Detection
+![GitHub contributors](https://img.shields.io/github/contributors/alex-wang101/Credit-Card-Fraud-Detection)
 
 
 ## Table of contents ## 
