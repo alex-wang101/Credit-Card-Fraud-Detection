@@ -31,15 +31,16 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 Time (seconds elapsed between the specific transaction vs the first)
 Transaction amount
 Class (either 0 or 1) - determines whether the transaction is fraud or not fraud. 
-##Project Structure##
+
+## Project Structure
 Credit-Card-Fraud-Detection/
 
 ├── data/                    
 ├── notebooks/                
 ├── src/                      
-│   ├── preprocessing.py      
-│   ├── train_model.py       
-│   ├── evaluate_model.py     
+├── preprocessing.py      
+├── train_model.py       
+├── evaluate_model.py     
 ├── results/                  
 ├── requirements.txt          
 ├── README.md                 
