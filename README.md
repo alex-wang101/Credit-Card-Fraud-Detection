@@ -1,8 +1,7 @@
 <img width="815" alt="image" src="https://github.com/user-attachments/assets/4c9dfc71-05db-4a81-93a1-b80d5de7f84d" />
 
 
-
-This project trains and tests pre-built ai-models for credit card fraud detection. We created an algorithm to test the accuracy of each model and return the most effective model for potential commercial use. 
+We tested 4 pre-built AI models to see which one is more effective for the given data.  
 
 ## Table of contents ## 
 1. Introduction
