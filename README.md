@@ -57,7 +57,9 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/1c7e7af7-6760-408a-9a1e-905c4d819a3f" />
 <br>
     - Precision represents "Predicted Fraud"
+  <br>
     - Recall represents "Predicted Not Fraud"
+  <br>
     - "True/False" represents if the transaction is evaluated correctly, and "+/-" represents if the transaction is Fraud or Not Fraud
 Example of our model reports:
 <br>
