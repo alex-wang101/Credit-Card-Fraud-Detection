@@ -40,8 +40,8 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
         Visualized fraud vs. legitimate transaction patterns.
   
 + What are some ways we manipulated the preprocessing data?
-  Scaled features using StandardScaler.
-  Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique).
+  - Scaled features using StandardScaler.
+  - Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique).
 
 + What ai models did we train and use?
   Logistic Regression
