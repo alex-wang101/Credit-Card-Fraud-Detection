@@ -62,7 +62,6 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 Example of our model reports:
 <br>
 <img width="199" alt="image" src="https://github.com/user-attachments/assets/415971c4-e96d-439a-a6f7-f5843e7017ef" />
-
     - Each 
 4. Hyperparameter Tuning:
     - Used GridSearchCV to optimize model performance.
