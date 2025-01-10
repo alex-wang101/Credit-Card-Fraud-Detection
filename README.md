@@ -1,4 +1,5 @@
-<img width="817" alt="image" src="https://github.com/user-attachments/assets/fee32ceb-13b5-4b81-9f98-e4d628b0e429" />
+<img width="815" alt="image" src="https://github.com/user-attachments/assets/4c9dfc71-05db-4a81-93a1-b80d5de7f84d" />
+
 
 
 This project trains and tests pre-built ai-models for credit card fraud detection. We created an algorithm to test the accuracy of each model and return the most effective model for potential commercial use. 
