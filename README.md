@@ -38,22 +38,23 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 + Class (either 0 or 1) - determines whether the transaction is fraud or not fraud. 
 
 
-## The Method ## 
-+ How did we set up our data for training?
-    -  We analyzed transaction amounts, time distributions, and correlations between features.
-    -  Visualized fraud vs. legitimate transaction patterns.
+## Setting Up ## 
+1. We analyzed transaction amounts, time distributions, and correlations between features
+2. Visualized fraud vs. legitimate transaction patterns
+3. Grouped the data into Pandas dataframe
+
++How did we set the data for the models to read? 
+![carbon](https://github.com/user-attachments/assets/88d8f8b7-bbcc-4169-a05f-be74faa1fcd4)
+     - Converts the dataset in the Pandas dataframe into NumPy arrays into features `x` and target labels `y`
+     - Set the 
+
   
 + What are some ways we manipulated the preprocessing data?
     - Scaled features using StandardScaler.
     - Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique).
-
-+ What ai models did we train and use?
-    - Logistic Regression
-    - Random Forest
-    - Gradient Boosting (e.g., XGBoost, LightGBM)
-    - Sequential
-
-+ How did we evaluate the data?
+    - 
++ How did we evaluate the accuracy of the model?
+<br>
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/1c7e7af7-6760-408a-9a1e-905c4d819a3f" />
 <br>
     - Precision represents "Predicted Fraud"
@@ -67,5 +68,4 @@ Example of our model reports:
 <br>
     - Examplar report data from one of our testings; each fraction represents the percent of success in that catagory.
 <br>
-4. Hyperparameter Tuning:
-    - Used GridSearchCV to optimize model performance.
+4
