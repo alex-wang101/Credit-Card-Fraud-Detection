@@ -156,7 +156,7 @@ This project evaluated several machine learning models for credit card fraud det
    - **F1-Score (Fraud)**: 0.91  
    - **Accuracy**: 1.00  
 
-3. **Random Forest Classifier**:
+3. **Random Forest Classifier (Unbalanced)**:
    - **Precision (Fraud)**: 1.00  
    - **Recall (Fraud)**: 0.80  
    - **F1-Score (Fraud)**: 0.89  
@@ -169,31 +169,31 @@ This project evaluated several machine learning models for credit card fraud det
    - **Accuracy**: 1.00  
 
 5. **Balanced Neural Predictions**:
-   - **Precision (Fraud)**: 0.84  
-   - **Recall (Fraud)**: 1.00  
-   - **F1-Score (Fraud)**: 0.91  
+   - **Precision (Fraud)**: 1.00  
+   - **Recall (Fraud)**: 0.80  
+   - **F1-Score (Fraud)**: 0.89  
    - **Accuracy**: 0.90  
 
 6. **Balanced Logistic Regression**:
-   - **Precision (Fraud)**: 0.94  
+   - **Precision (Fraud)**: 0.97  
    - **Recall (Fraud)**: 0.93  
    - **F1-Score (Fraud)**: 0.95  
    - **Accuracy**: 0.95  
 
 7. **Balanced Random Forest Classifier (*Best Model*)**:
-   - **Precision (Fraud)**: 0.95  
-   - **Recall (Fraud)**: 0.99  
+   - **Precision (Fraud)**: 0.99  
+   - **Recall (Fraud)**: 0.95  
    - **F1-Score (Fraud)**: 0.97  
    - **Accuracy**: 0.97  
 
 8. **Balanced Gradient Boosting Classifier**:
-   - **Precision (Fraud)**: 0.92  
-   - **Recall (Fraud)**: 0.96  
+   - **Precision (Fraud)**: 0.96  
+   - **Recall (Fraud)**: 0.92  
    - **F1-Score (Fraud)**: 0.94  
    - **Accuracy**: 0.94  
 
 ### Conclusion:
-The **Balanced Random Forest Classifier** emerged as the top-performing model with a precision of 0.95, recall of 0.99, and an F1-score of 0.97. These metrics highlight its strong ability to correctly identify fraudulent transactions while minimizing false negatives and false positives. 
+The **Balanced Random Forest Classifier** emerged as the top-performing model with a precision of 0.99, recall of 0.95, and an F1-score of 0.97. These metrics highlight its strong ability to correctly identify fraudulent transactions while minimizing false negatives and false positives. 
 
 Other models, such as the Balanced Gradient Boosting Classifier and Balanced Logistic Regression, also showed competitive performance. The unbalanced models performed well in terms of accuracy but struggled with recall for fraud detection due to class imbalance.
 
