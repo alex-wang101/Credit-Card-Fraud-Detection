@@ -134,7 +134,7 @@ Below is a detailed description of the AI models used in this project:
   - Can overfit if not properly tuned.
   - Training can be time-consuming, especially with large datasets.
 ### 5. Support Vectone Machine
-![image](https://github.com/user-attachments/assets/f0a12182-d328-47e3-987c-ae7d6ab90fb7)
+![1701290431943](https://github.com/user-attachments/assets/a4aadb88-7038-48f0-a1d0-0e0678841a50)
 <br>
 - **Description**: A Support Vector Machine (SVM) is a supervised learning model that finds the optimal hyperplane to separate data points of different classes. It can use kernel functions to map data into higher dimensions for better separability in non-linear datasets.
 - **Application in Fraud Detection**: It classifies transactions as fraudulent or legitimate by finding patterns in input features (e.g., transaction amount, time, location) and leveraging kernels to handle non-linear relationships.
