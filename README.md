@@ -138,28 +138,63 @@ Each of these models has unique strengths in detecting fraudulent transactions. 
 
 This project aimed to develop a machine learning-based solution to detect fraudulent transactions effectively. Several machine learning models, including Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost, and Artificial Neural Networks (ANN), were evaluated for their performance.
 
-### Key Findings
-1. **Data Insights**:
-   - The dataset exhibited significant class imbalance, with fraudulent transactions representing a small fraction of the total. This was addressed using techniques like oversampling and class weighting.
-   - Certain features, such as transaction amount and time-based features, provided valuable signals for distinguishing fraudulent transactions.
+## Summary and Conclusion
 
-2. **Model Performance**:
-   - **Logistic Regression** served as a robust baseline but struggled with non-linear relationships in the data.
-   - **Decision Trees** offered better interpretability but were prone to overfitting.
-   - **Random Forest and Gradient Boosting** outperformed simpler models due to their ability to capture complex patterns while reducing overfitting.
+This project evaluated several machine learning models for credit card fraud detection. Below are the key findings with performance metrics:
 
-3. **Metrics**:
-   - Precision and recall were prioritized over accuracy to minimize false negatives (missed fraudulent transactions) and false positives (legitimate transactions flagged as fraud).
-   - The models effectively handled the imbalanced dataset, with XGBoost achieving the best balance between precision and recall.
+### Model Performance Metrics:
 
-### Conclusion
-The project successfully demonstrated the use of machine learning to detect fraudulent transactions with high accuracy and reliability. Among the evaluated models, **XGBoost** emerged as the top-performing model, combining efficiency and predictive accuracy. However, depending on the deployment environment, other models like Random Forest or ANN may also be viable due to their strengths in specific scenarios.
+1. **Linear Model (Logistic Regression)**:
+   - **Precision (Fraud)**: 0.77  
+   - **Recall (Fraud)**: 0.65  
+   - **F1-Score (Fraud)**: 0.71  
+   - **Accuracy**: 1.00  
 
-Future work could focus on:
-- Further optimizing model hyperparameters to enhance performance.
-- Integrating real-time fraud detection pipelines for deployment.
-- Exploring advanced techniques like deep learning ensembles or anomaly detection methods.
+2. **Neural Predictions (Unbalanced)**:
+   - **Precision (Fraud)**: 0.95  
+   - **Recall (Fraud)**: 0.87  
+   - **F1-Score (Fraud)**: 0.91  
+   - **Accuracy**: 1.00  
 
-This project highlights the potential of machine learning in combating fraud and provides a foundation for developing robust, scalable fraud detection systems.
+3. **Random Forest Classifier**:
+   - **Precision (Fraud)**: 1.00  
+   - **Recall (Fraud)**: 0.80  
+   - **F1-Score (Fraud)**: 0.89  
+   - **Accuracy**: 1.00  
 
+4. **Gradient Boosting Classifier (Unbalanced)**:
+   - **Precision (Fraud)**: 0.90  
+   - **Recall (Fraud)**: 0.76  
+   - **F1-Score (Fraud)**: 0.82  
+   - **Accuracy**: 1.00  
 
+5. **Balanced Neural Predictions**:
+   - **Precision (Fraud)**: 0.84  
+   - **Recall (Fraud)**: 1.00  
+   - **F1-Score (Fraud)**: 0.91  
+   - **Accuracy**: 0.90  
+
+6. **Balanced Logistic Regression**:
+   - **Precision (Fraud)**: 0.94  
+   - **Recall (Fraud)**: 0.93  
+   - **F1-Score (Fraud)**: 0.95  
+   - **Accuracy**: 0.95  
+
+7. **Balanced Random Forest Classifier (*Best Model*)**:
+   - **Precision (Fraud)**: 0.95  
+   - **Recall (Fraud)**: 0.99  
+   - **F1-Score (Fraud)**: 0.97  
+   - **Accuracy**: 0.97  
+
+8. **Balanced Gradient Boosting Classifier**:
+   - **Precision (Fraud)**: 0.92  
+   - **Recall (Fraud)**: 0.96  
+   - **F1-Score (Fraud)**: 0.94  
+   - **Accuracy**: 0.94  
+
+### Conclusion:
+The **Balanced Random Forest Classifier** emerged as the top-performing model with a precision of 0.95, recall of 0.99, and an F1-score of 0.97. These metrics highlight its strong ability to correctly identify fraudulent transactions while minimizing false negatives and false positives. 
+
+Other models, such as the Balanced Gradient Boosting Classifier and Balanced Logistic Regression, also showed competitive performance. The unbalanced models performed well in terms of accuracy but struggled with recall for fraud detection due to class imbalance.
+
+This project demonstrates that balanced ensemble methods, like the Random Forest and Gradient Boosting Classifiers, are highly effective in detecting fraudulent transactions. Future improvements could involve further hyperparameter tuning, implementing real-time detection pipelines, or exploring advanced deep learning techniques.
