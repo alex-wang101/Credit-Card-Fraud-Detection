@@ -133,18 +133,19 @@ Below is a detailed description of the AI models used in this project:
 - **Considerations**:
   - Can overfit if not properly tuned.
   - Training can be time-consuming, especially with large datasets.
-### 5. Decision Tree Classifier
+### 5. Support Vectone Machine
 ![image](https://github.com/user-attachments/assets/f0a12182-d328-47e3-987c-ae7d6ab90fb7)
 <br>
-- **Description**: A Decision Tree is a flowchart-like structure where internal nodes represent feature tests, branches represent outcomes, and leaf nodes represent class labels.
-- **Application in Fraud Detection**: It segments the dataset based on feature values to classify transactions as fraudulent or non-fraudulent.
+- **Description**: A Support Vector Machine (SVM) is a supervised learning model that finds the optimal hyperplane to separate data points of different classes. It can use kernel functions to map data into higher dimensions for better separability in non-linear datasets.
+- **Application in Fraud Detection**: It classifies transactions as fraudulent or legitimate by finding patterns in input features (e.g., transaction amount, time, location) and leveraging kernels to handle non-linear relationships.
 - **Advantages**:
-  - Easy to interpret and visualize.
-  - Captures non-linear relationships between features and the target variable.
+  - Performs well in high-dimensional spaces.
+  - Effective at capturing complex, non-linear patterns using kernel functions.
+  - Robust to overfitting, especially with a small number of samples relative to features.
 - **Considerations**:
-  - Prone to overfitting, especially with deep trees.
-  - Sensitive to small variations in the data.
-
+  - Computationally expensive, particularly with large datasets.
+  - Requires careful tuning of kernel type and parameters for optimal performance.
+  - Not ideal for real-time detection in large-scale systems due to resource demands.
 
 
 ---
@@ -210,16 +211,16 @@ This project evaluated several machine learning models for credit card fraud det
    - **Accuracy**: 0.97  
 
 10. **Balanced Gradient Boosting Classifier**:
-   - **Precision (Fraud)**: 0.96  
-   - **Recall (Fraud)**: 0.92  
-   - **F1-Score (Fraud)**: 0.94  
-   - **Accuracy**: 0.94
+    - **Precision (Fraud)**: 0.96  
+    - **Recall (Fraud)**: 0.92  
+    - **F1-Score (Fraud)**: 0.94  
+    - **Accuracy**: 0.94
      
-11. **Balanced Support Vector Machine**
-   - **Precision (Fraud)**: 0.99  
-   - **Recall (Fraud)**: 0.93  
-   - **F1-Score (Fraud)**: 0.96  
-   - **Accuracy**: 0.96
+10. **Balanced Support Vector Machine**
+    - **Precision (Fraud)**: 0.99  
+    - **Recall (Fraud)**: 0.93  
+    - **F1-Score (Fraud)**: 0.96  
+    - **Accuracy**: 0.96
 
 ### Conclusion:
 The **Balanced Random Forest Classifier** emerged as the top-performing model with a precision of 0.99, recall of 0.95, and an F1-score of 0.97. These metrics highlight its strong ability to correctly identify fraudulent transactions while minimizing false negatives and false positives. 
