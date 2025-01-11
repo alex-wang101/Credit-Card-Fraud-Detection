@@ -92,17 +92,23 @@ Below is a detailed description of the AI models used in this project:
   - Assumes a linear relationship between features and the log-odds of the outcome.
   - May underperform with complex, non-linear data patterns.
 
-### 2. Decision Tree Classifier
-![image](https://github.com/user-attachments/assets/f0a12182-d328-47e3-987c-ae7d6ab90fb7)
+### 2. Neural Network
+![A-simple-neural-network-with-two-hidden-layers-of-two-nodes-each-four-inputs-and-a](https://github.com/user-attachments/assets/fd37aea3-78d4-4e1f-8928-3f8a8406381b)
 <br>
-- **Description**: A Decision Tree is a flowchart-like structure where internal nodes represent feature tests, branches represent outcomes, and leaf nodes represent class labels.
-- **Application in Fraud Detection**: It segments the dataset based on feature values to classify transactions as fraudulent or non-fraudulent.
+
+- **Description**: A neural network utilizing dense (fully connected) layers predicts outcomes by connecting all neurons between layers, enabling the model to learn complex relationships in the data. Each dense layer processes input features through weighted connections and activation functions, making this architecture highly effective for tasks requiring intricate feature interactions.
+- **Application in Fraud Detection**: Dense layers in neural networks are employed to analyze transactional data (e.g., amount, location, timestamp) and identify patterns associated with fraudulent activities. The network learns complex relationships between features, improving detection accuracy over traditional models.
+
 - **Advantages**:
-  - Easy to interpret and visualize.
-  - Captures non-linear relationships between features and the target variable.
+  - **Effective Handling of Complex Data**: Excels at identifying non-linear and intricate patterns in fraud-related data.
+  - **Multi-Feature Integration**: Simultaneously processes multiple input features for improved prediction accuracy.
+  - **Scalability**: Capable of continuous improvement with growing datasets.
+
 - **Considerations**:
-  - Prone to overfitting, especially with deep trees.
-  - Sensitive to small variations in the data.
+  - **Data Requirements**: Requires substantial amounts of labeled data for effective training, which may not always be readily available.
+  - **Risk of Overfitting**: Needs proper regularization techniques (e.g., dropout, L2 regularization) to avoid overfitting on training data.
+  - **Computational Complexity**: High computational demands, especially for real-time detection in large-scale systems.
+
 
 ### 3. Random Forest Classifier
 ![image](https://github.com/user-attachments/assets/c20513cb-e0be-4e24-868e-b052d425990b)
@@ -127,6 +133,17 @@ Below is a detailed description of the AI models used in this project:
 - **Considerations**:
   - Can overfit if not properly tuned.
   - Training can be time-consuming, especially with large datasets.
+### 5. Decision Tree Classifier
+![image](https://github.com/user-attachments/assets/f0a12182-d328-47e3-987c-ae7d6ab90fb7)
+<br>
+- **Description**: A Decision Tree is a flowchart-like structure where internal nodes represent feature tests, branches represent outcomes, and leaf nodes represent class labels.
+- **Application in Fraud Detection**: It segments the dataset based on feature values to classify transactions as fraudulent or non-fraudulent.
+- **Advantages**:
+  - Easy to interpret and visualize.
+  - Captures non-linear relationships between features and the target variable.
+- **Considerations**:
+  - Prone to overfitting, especially with deep trees.
+  - Sensitive to small variations in the data.
 
 
 
@@ -144,41 +161,41 @@ This project evaluated several machine learning models for credit card fraud det
 
 ### Model Performance Metrics:
 
-1. **Linear Model (Logistic Regression)**:
+1. **Unbalanced Linear Model**:
    - **Precision (Fraud)**: 0.77  
    - **Recall (Fraud)**: 0.65  
    - **F1-Score (Fraud)**: 0.71  
    - **Accuracy**: 1.00  
 
-2. **Neural Predictions (Unbalanced)**:
+2. **Unbalanced Neural Network**:
    - **Precision (Fraud)**: 0.95  
    - **Recall (Fraud)**: 0.87  
    - **F1-Score (Fraud)**: 0.91  
    - **Accuracy**: 1.00  
 
-3. **Random Forest Classifier (Unbalanced)**:
+3. **Unbalanced Random Forest Classifier**:
    - **Precision (Fraud)**: 1.00  
    - **Recall (Fraud)**: 0.80  
    - **F1-Score (Fraud)**: 0.89  
    - **Accuracy**: 1.00  
 
-4. **Gradient Boosting Classifier (Unbalanced)**:
+4. **Unbalanced Gradient Boosting Classifier**:
    - **Precision (Fraud)**: 0.90  
    - **Recall (Fraud)**: 0.76  
    - **F1-Score (Fraud)**: 0.82  
-   - **Accuracy**: 1.00  
-
-5. **Balanced Neural Predictions**:
-   - **Precision (Fraud)**: 1.00  
-   - **Recall (Fraud)**: 0.80  
-   - **F1-Score (Fraud)**: 0.89  
-   - **Accuracy**: 0.90  
-
-6. **Balanced Logistic Regression**:
+   - **Accuracy**: 1.00
+     
+5. **Balanced Logistic Regression**:
    - **Precision (Fraud)**: 0.97  
    - **Recall (Fraud)**: 0.93  
    - **F1-Score (Fraud)**: 0.95  
    - **Accuracy**: 0.95  
+
+6. **Balanced Neural Network**:
+   - **Precision (Fraud)**: 1.00  
+   - **Recall (Fraud)**: 0.80  
+   - **F1-Score (Fraud)**: 0.89  
+   - **Accuracy**: 0.90  
 
 7. **Balanced Random Forest Classifier (*Best Model*)**:
    - **Precision (Fraud)**: 0.99  
