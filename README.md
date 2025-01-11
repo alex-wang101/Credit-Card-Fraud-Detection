@@ -80,6 +80,9 @@ Example of our model reports:
 Below is a detailed description of the AI models used in this project:
 
 ### 1. Logistic Regression
+![image](https://github.com/user-attachments/assets/d0354c9a-7660-42f8-8be8-6e6f2c3e5457)
+<br>
+
 - **Description**: Logistic Regression is a statistical model that predicts the probability of a binary outcome. It models the relationship between the dependent variable and one or more independent variables using a logistic function.
 - **Application in Fraud Detection**: It estimates the likelihood of a transaction being fraudulent based on input features. Despite its simplicity, it serves as a strong baseline for binary classification tasks.
 - **Advantages**:
