@@ -44,7 +44,7 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 3. Grouped the data into Pandas dataframe
 
 + How did we set the data for the models to read? 
-![carbon](https://github.com/user-attachments/assets/88d8f8b7-bbcc-4169-a05f-be74faa1fcd4)
+![carbon (1)](https://github.com/user-attachments/assets/6d2d8bf5-7041-43f6-92aa-8d86265e0d14)
      - Converts the dataset in the Pandas dataframe into NumPy arrays into features `x` and target labels `y`
      - `train_np[:, :-1]`: Selects all rows (:) and all columns except the last one (:-1). These are the feature columns.
      - `train_np[:, -1]`: Selects all rows and only the last column (-1). This is the target label column.
