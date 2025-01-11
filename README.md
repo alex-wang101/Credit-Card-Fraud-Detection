@@ -44,16 +44,23 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 3. Grouped the data into Pandas dataframe
 
 + How did we set the data for the models to read? 
-![carbon (1)](https://github.com/user-attachments/assets/6d2d8bf5-7041-43f6-92aa-8d86265e0d14)
-     - Converts the dataset in the Pandas dataframe into NumPy arrays into features `x` and target labels `y`
-     - `train_np[:, :-1]`: Selects all rows (:) and all columns except the last one (:-1). These are the feature columns.
-     - `train_np[:, -1]`: Selects all rows and only the last column (-1). This is the target label column.
+<img width="679" alt="image" src="https://github.com/user-attachments/assets/f1fd4cf0-8dae-4fcf-9d4f-834bb84243e6" />
+<br>
+1. Converts the dataset in the Pandas dataframe into NumPy arrays into features `x` and target labels `y`
+       <br>
+2. `train_np[:, :-1]`: Selects all rows (:) and all columns except the last one (:-1). These are the feature columns.
+<br>
+3. `train_np[:, -1]`: Selects all rows and only the last column (-1). This is the target label column.
+<br>
+4. Dataset broken into Training data, testing data and validation data. Training and validation trains and refines the model, whereas Testing is hidden except for RandomForest.
   
-+ What are some ways we manipulated the preprocessing data?
+5. What are some ways we manipulated the preprocessing data?
     - Scaled features using StandardScaler.
     - Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique).
-    - 
-+ How did we evaluate the accuracy of the model?
+<br>
+While using the scarmbled data of every single transaction, the model often ignore the `recall negative` values 
+
+How did we evaluate the accuracy of the model?
 <br>
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/1c7e7af7-6760-408a-9a1e-905c4d819a3f" />
 <br>
