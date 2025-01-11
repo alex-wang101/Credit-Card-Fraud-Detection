@@ -184,30 +184,42 @@ This project evaluated several machine learning models for credit card fraud det
    - **Recall (Fraud)**: 0.76  
    - **F1-Score (Fraud)**: 0.82  
    - **Accuracy**: 1.00
+  
+5. **Unbalanced Support Vector Machine**
+   - **Precision (Fraud)**: 0.09  
+   - **Recall (Fraud)**: 0.91  
+   - **F1-Score (Fraud)**: 0.16  
+   - **Accuracy**: 0.98
      
-5. **Balanced Logistic Regression**:
+7. **Balanced Logistic Regression**:
    - **Precision (Fraud)**: 0.97  
    - **Recall (Fraud)**: 0.93  
    - **F1-Score (Fraud)**: 0.95  
    - **Accuracy**: 0.95  
 
-6. **Balanced Neural Network**:
+8. **Balanced Neural Network**:
    - **Precision (Fraud)**: 1.00  
    - **Recall (Fraud)**: 0.80  
    - **F1-Score (Fraud)**: 0.89  
    - **Accuracy**: 0.90  
 
-7. **Balanced Random Forest Classifier (*Best Model*)**:
+9. **Balanced Random Forest Classifier (*Best Model*)**:
    - **Precision (Fraud)**: 0.99  
    - **Recall (Fraud)**: 0.95  
    - **F1-Score (Fraud)**: 0.97  
    - **Accuracy**: 0.97  
 
-8. **Balanced Gradient Boosting Classifier**:
+10. **Balanced Gradient Boosting Classifier**:
    - **Precision (Fraud)**: 0.96  
    - **Recall (Fraud)**: 0.92  
    - **F1-Score (Fraud)**: 0.94  
-   - **Accuracy**: 0.94  
+   - **Accuracy**: 0.94
+     
+11. **Balanced Support Vector Machine**
+   - **Precision (Fraud)**: 0.99  
+   - **Recall (Fraud)**: 0.93  
+   - **F1-Score (Fraud)**: 0.96  
+   - **Accuracy**: 0.96
 
 ### Conclusion:
 The **Balanced Random Forest Classifier** emerged as the top-performing model with a precision of 0.99, recall of 0.95, and an F1-score of 0.97. These metrics highlight its strong ability to correctly identify fraudulent transactions while minimizing false negatives and false positives. 
