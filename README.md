@@ -144,8 +144,6 @@ This project aimed to develop a machine learning-based solution to detect fraudu
    - **Logistic Regression** served as a robust baseline but struggled with non-linear relationships in the data.
    - **Decision Trees** offered better interpretability but were prone to overfitting.
    - **Random Forest and Gradient Boosting** outperformed simpler models due to their ability to capture complex patterns while reducing overfitting.
-   - **XGBoost** provided the best performance overall, benefiting from regularization and optimized gradient boosting techniques.
-   - **ANN** demonstrated strong predictive power, particularly for identifying subtle patterns, but required careful tuning and longer training times.
 
 3. **Metrics**:
    - Precision and recall were prioritized over accuracy to minimize false negatives (missed fraudulent transactions) and false positives (legitimate transactions flagged as fraud).
