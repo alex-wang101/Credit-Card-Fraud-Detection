@@ -48,15 +48,14 @@ The dataset used for this project is the [Credit Card Fraud Detection Dataset.](
 <br>
 1. Converts the dataset in the Pandas dataframe into NumPy arrays into features `x` and target labels `y`
        <br>
-2. `train_np[:, :-1]`: Selects all rows (:) and all columns except the last one (:-1). These are the feature columns.
+2. **train_np[:, :-1]**: Selects all rows (:) and all columns except the last one (:-1). These are the feature columns.
 <br>
-3. `train_np[:, -1]`: Selects all rows and only the last column (-1). This is the target label column.
+3. **train_np[:, -1]**: Selects all rows and only the last column (-1). This is the target label column.
 <br>
-4. Dataset broken into Training data, testing data and validation data. Training and validation trains and refines the model, whereas Testing is hidden except for RandomForest.
-  
+4. Dataset broken into Training data, testing data and validation data. Training and validation trains and refines the model, whereas Testing is hidden except for RandomForest.  
 5. What are some ways we manipulated the preprocessing data?
     - Scaled features using StandardScaler.
-    - Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique).
+    - Addressed class imbalance with SMOTE (Synthetic Minority Oversampling Technique), where we randomly took out not fraud data so the number of fraud transactions are equivalent to the number of not fraud transactions. 
 <br>
 While using the scarmbled data of every single transaction, the model often ignore the `recall negative` values 
 
@@ -75,4 +74,61 @@ Example of our model reports:
 <br>
     - Examplar report data from one of our testings; each fraction represents the percent of success in that catagory.
 <br>
-4
+
+## AI Models Used in the Credit Card Fraud Detection Project
+
+Below is a detailed description of the AI models used in this project:
+
+### 1. Logistic Regression
+- **Description**: Logistic Regression is a statistical model that predicts the probability of a binary outcome. It models the relationship between the dependent variable and one or more independent variables using a logistic function.
+- **Application in Fraud Detection**: It estimates the likelihood of a transaction being fraudulent based on input features. Despite its simplicity, it serves as a strong baseline for binary classification tasks.
+- **Advantages**:
+  - Interpretable coefficients indicating feature importance.
+  - Efficient training on large datasets.
+- **Considerations**:
+  - Assumes a linear relationship between features and the log-odds of the outcome.
+  - May underperform with complex, non-linear data patterns.
+
+### 2. Decision Tree Classifier
+![image](https://github.com/user-attachments/assets/f0a12182-d328-47e3-987c-ae7d6ab90fb7)
+<br>
+- **Description**: A Decision Tree is a flowchart-like structure where internal nodes represent feature tests, branches represent outcomes, and leaf nodes represent class labels.
+- **Application in Fraud Detection**: It segments the dataset based on feature values to classify transactions as fraudulent or non-fraudulent.
+- **Advantages**:
+  - Easy to interpret and visualize.
+  - Captures non-linear relationships between features and the target variable.
+- **Considerations**:
+  - Prone to overfitting, especially with deep trees.
+  - Sensitive to small variations in the data.
+
+### 3. Random Forest Classifier
+![image](https://github.com/user-attachments/assets/c20513cb-e0be-4e24-868e-b052d425990b)
+<br>
+- **Description**: Random Forest is an ensemble method that constructs multiple decision trees during training and outputs the mode of their predictions.
+- **Application in Fraud Detection**: It aggregates the decisions of various trees to improve predictive accuracy and control overfitting.
+- **Advantages**:
+  - Reduces overfitting compared to individual decision trees.
+  - Handles large datasets with higher dimensionality.
+- **Considerations**:
+  - Less interpretable than single decision trees.
+  - Requires more computational resources for training and prediction.
+
+### 4. Gradient Boosting Classifier
+![image](https://github.com/user-attachments/assets/ffbc073f-8cd7-4710-882c-322cedd0323d)
+<br>
+- **Description**: Gradient Boosting builds an ensemble of trees sequentially, where each tree corrects the errors of its predecessors by optimizing a loss function.
+- **Application in Fraud Detection**: It iteratively improves model performance by focusing on misclassified transactions, enhancing detection accuracy.
+- **Advantages**:
+  - High predictive performance, especially with complex datasets.
+  - Effectively handles imbalanced data by focusing on difficult cases.
+- **Considerations**:
+  - Can overfit if not properly tuned.
+  - Training can be time-consuming, especially with large datasets.
+
+
+
+---
+
+Each of these models has unique strengths in detecting fraudulent transactions. The choice of the model depends on the dataset size, feature complexity, interpretability requirements, and computational resources. In this project, multiple models were evaluated to determine the most effective approach.
+
+
