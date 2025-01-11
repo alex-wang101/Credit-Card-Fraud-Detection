@@ -1,7 +1,7 @@
 <img width="816" alt="image" src="https://github.com/user-attachments/assets/62ab8fab-8bf8-4b9c-a6ee-196ad122aebe" />
 
 
-**We tested 4 pre-built AI models to see which one is more effective for the given data.**
+**We tested 5 AI models to see which one is more effective for the given data.**
 <br>
 ![GitHub contributors](https://img.shields.io/github/contributors/alex-wang101/Credit-Card-Fraud-Detection)
 
