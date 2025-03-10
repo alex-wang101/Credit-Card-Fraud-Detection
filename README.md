@@ -1,4 +1,4 @@
-<img width="816" alt="image" src="https://github.com/user-attachments/assets/62ab8fab-8bf8-4b9c-a6ee-196ad122aebe" />
+<img width="812" alt="image" src="https://github.com/user-attachments/assets/1f7fae10-5b75-4b52-9722-4fa09fa97e38" />
 
 
 **We tested 5 AI models to see which one is more effective for the given data.**
